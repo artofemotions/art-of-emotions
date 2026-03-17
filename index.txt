@@ -1712,18 +1712,24 @@ footer{background:var(--ink);color:#fff;padding:4.5rem 5rem;display:grid;grid-te
 <!-- Gallery images — loaded on demand to keep page fast -->
 <script id="gallery-image-data">
 const GALLERY_IMGS = {
-  "seen": "obscurity.jpg",
-  "spring": "opening.jpg",
-  "cocoon": "cocooning.jpg",
-  "infinity": "infinity.jpg",
-  "growing": "growing.jpg",
-  "death": "death-of-ego.jpg",
-  "choice": "choice.jpg",
+  "seen":       "obscurity.jpg",
+  "spring":     "opening.jpg",
+  "cocoon":     "cocooning.jpg",
+  "infinity":   "infinity.jpg",
+  "jackbean":   "growing.jpg",
+  "death":      "death-of-ego.jpg",
+  "choice":     "choice.jpg",
   "connection": "connection.jpg",
-  "polarity": "polarity.jpg",
-  "alignment": "alignment.jpg",
-  "tara": "tara.jpg",
-  "integration": "integration.jpg"
+  "polarity":   "polarity.jpg",
+  "surf":       "alignment.jpg",
+  "tara":       "tara.jpg",
+  "gratitude":  "integration.jpg",
+  "priest":     "priesthood.jpg",
+  "bending2":   "bending-reality.jpg",
+  "guardian":   "guardian.jpg",
+  "balancing":  "equilibrium.jpg",
+  "sparrow2":   "sparrow-and-phoenix.jpg",
+  "ancestry2":  "lineage.jpg"
 };
 
 function loadGalleryImages() {

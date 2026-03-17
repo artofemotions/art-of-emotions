@@ -1732,7 +1732,7 @@ const GALLERY_IMGS = {
 };
 
 function loadGalleryImages() {
-  const imgs = document.querySelectorAll('img[data-src]');
+  const imgs = document.querySelectorAll('img[data-src^="gallery-img-"]');
   imgs.forEach(img => {
     const key = img.getAttribute('data-src').replace('gallery-img-', '');
     if (GALLERY_IMGS[key]) {

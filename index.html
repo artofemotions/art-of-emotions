@@ -1671,9 +1671,9 @@ footer{background:var(--ink);color:#fff;padding:4.5rem 5rem;display:grid;grid-te
       <div class="c-item"><span class="c-icon">📍</span><div><div class="c-label">Location</div><div class="c-val">Toronto, Canada</div></div></div>
     </div>
   </div>
-  <div class="cf">
+  <form class="cf" action="https://formspree.io/f/xnjgoady" method="POST">
     <p class="cf-area-label">Select your area of inquiry</p>
-    <select class="cf-select">
+    <select class="cf-select" name="program">
       <option value="" disabled="" selected="">— Select a program —</option>
       <option>Level 1 — Experiential Foundations</option>
       <option>Level 2 — Practitioner Training</option>
@@ -1681,10 +1681,10 @@ footer{background:var(--ink);color:#fff;padding:4.5rem 5rem;display:grid;grid-te
       <option>Institutional Training</option>
       <option>General Inquiry</option>
     </select>
-    <div class="cf-row"><input type="text" placeholder="Your name"><input type="email" placeholder="Your email"></div>
-    <textarea placeholder="Your message…"></textarea>
-    <button class="cf-btn">Send Message →</button>
-  </div>
+    <div class="cf-row"><input type="text" name="name" placeholder="Your name" required><input type="email" name="email" placeholder="Your email" required></div>
+    <textarea name="message" placeholder="Your message…" required></textarea>
+    <button type="submit" class="cf-btn">Send Message →</button>
+  </form>
 </section>
 
 <footer>

@@ -1710,32 +1710,30 @@ footer{background:var(--ink);color:#fff;padding:4.5rem 5rem;display:grid;grid-te
 
 
 <!-- Gallery images — loaded on demand to keep page fast -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="gallery-image-data">
+<script id="gallery-image-data">
 const GALLERY_IMGS = {
   "seen": "obscurity.jpg",
-"spring": "opening.jpg",
-"cocoon": "cocooning.jpg",
-"infinity": "infinity.jpg",
-"growing": "growing.jpg",
-"death": "death-of-ego.jpg",
-"choice": "choice.jpg",
-"connection": "connection.jpg",
-"polarity": "polarity.jpg",
-"alignment": "alignment.jpg",
-"tara": "tara.jpg",
-"integration": "integration.jpg"
+  "spring": "opening.jpg",
+  "cocoon": "cocooning.jpg",
+  "infinity": "infinity.jpg",
+  "growing": "growing.jpg",
+  "death": "death-of-ego.jpg",
+  "choice": "choice.jpg",
+  "connection": "connection.jpg",
+  "polarity": "polarity.jpg",
+  "alignment": "alignment.jpg",
+  "tara": "tara.jpg",
+  "integration": "integration.jpg"
+};
 
 function loadGalleryImages() {
   const imgs = document.querySelectorAll('img[data-src]');
   imgs.forEach(img => {
     const key = img.getAttribute('data-src').replace('gallery-img-', '');
-    if (GALLERY_IMGS && GALLERY_IMGS[key]) {
+    if (GALLERY_IMGS[key]) {
       img.src = GALLERY_IMGS[key];
       img.removeAttribute('data-src');
     }
   });
 }
-loadGalleryImages();
 </script>
-</body>
-</html>

@@ -1738,6 +1738,10 @@ function loadGalleryImages() {
     if (GALLERY_IMGS[key]) {
       img.src = GALLERY_IMGS[key];
       img.removeAttribute('data-src');
-    }
+   }
   });
 }
+document.addEventListener('DOMContentLoaded', loadGalleryImages);
+</script>
+</body>
+</html>

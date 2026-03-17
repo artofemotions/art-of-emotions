@@ -1737,9 +1737,8 @@ function loadGalleryImages() {
   imgs.forEach(img => {
     const key = img.getAttribute('data-src').replace('gallery-img-', '');
     if (GALLERY_IMGS[key]) {
-      img.src = GALLERY_IMGS[key];
+      img.src = 'images/' + GALLERY_IMGS[key];  // 
       img.removeAttribute('data-src');
     }
   });
 }
-</script>
